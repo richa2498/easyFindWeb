@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
@@ -18,10 +16,9 @@
   <!-- Sidebar (hidden by default) -->
   <div id="mySidenav" class="sidenav" onclick="closeNav()">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"></a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
+    <a href="aboutus.html">About</a>
+    <a href="ourteam.html">Our Team</a>
+    <a href="contactus.html">Contact Us</a>
   </div>
 
 
@@ -35,7 +32,7 @@
   <div class="wrapper">
     <input type="text" class="input"
     placeholder="What are you looking for?">
-    <div class="searchbtn"><i class="fa fa-search" style="margin:1.5em;"></i></div>
+    <div class="searchbtn"><i class="fa fa-search" style="padding:1.5em;"></i></div>
   </div>
   </div>
   <!-- Top menu -->
@@ -131,17 +128,7 @@
 
     <hr id="about">
 
-    <!-- About Section -->
-    <div class="w3-container w3-padding-32 w3-center">
-      <h3>About Me, The Food Man</h3><br>
-      <img src="images/chef.jpg" alt="Me" class="w3-image" style="display:block;margin:auto" width="800" height="533">
-      <div class="w3-padding-32">
-        <h4><b>I am Who I Am!</b></h4>
-        <h6><i>With Passion For Real, Good Food</i></h6>
-        <p>Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
-      </div>
-    </div>
-    <hr>
+
 
     <!-- Footer -->
     <footer class="w3-row-padding w3-padding-32">
@@ -168,13 +155,13 @@
       </div>
 
       <div class="w3-third w3-serif">
-        <h3>All time freash</h3>
+        <h3>POPULAR TAGS heading</h3>
         <p>
-          <span class="w3-tag w3-black w3-margin-bottom">Travel</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">New York</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dinner</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Salmon</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">France</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Drinks</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Ideas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Flavors</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cuisine</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Chicken</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Dressing</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fried</span>
-          <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Fish</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Duck</span>
+          <div class="wrapper1">
+              <a href="http://www.google.com"><i class="fa fa-3x fa-google-plus"></i></a>
+              <a href="http://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+              <a href="http://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i></a>
+            </div>
         </p>
       </div>
     </footer>
@@ -182,6 +169,21 @@
     <!-- End page content -->
   </div>
 </body>
+<script>
+var myIndex = 0;
+carousel();
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
 
+</script>
 <script src = "scripts/home.js" type="text/javascript"></script>
 </html>
