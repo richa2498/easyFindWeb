@@ -39,8 +39,8 @@
     <img class="mySlides" src="images/cherries.jpg" style="width:100%">
   </div>
   <div class="wrapper">
-    <input type="text" class="input"
-    placeholder="What are you looking for?">
+    <input type="text" class="input" id="se"
+    placeholder="What are you looking for?"><i class='fa fa-crosshairs'style='font-size:36px;margin:5px;color:white;'></i>
     <div class="searchbtn"><i  class="fa fa-search" style="padding:1.5em;"></i></div>
   </div>
   </div>
@@ -184,6 +184,8 @@
 </body>
 <script>
 var myIndex = 0;
+var x = document.getElementById("se");
+
 carousel();
 function carousel() {
   var i;
@@ -199,6 +201,7 @@ function carousel() {
 function addtoFav(x) {
    x.classList.toggle("red");
 }
+
 </script>
 <script src = "scripts/home.js" type="text/javascript"></script>
 </html>

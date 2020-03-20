@@ -153,10 +153,13 @@ html {
     </div>
 
         <h2> Lets be in touch</h2>
+        <form  action="mail.php" method="post">
+
+        </form>
         <div class="row100">
           <div class="col">
             <div class="inputBox">
-              <input type="text" name="" required="required">
+              <input type="text" name="name" required="required">
               <span class="text">First Name</span>
               <span class="line"></span>
             </div>
@@ -165,7 +168,7 @@ html {
 
           <div class="col">
             <div class="inputBox">
-              <input type="text" name= "", required="required">
+              <input type="text" name= "email", required="required">
               <span class="text"> Email</span>
               <span class="line"></span>
             </div>
@@ -178,7 +181,7 @@ html {
         <div class="row100">
           <div class="col">
             <div class="inputBox textarea">
-            <textarea required="required"></textarea>
+            <textarea required="required" name="message"></textarea>
               <span class="text">Type your Message Here....</span>
               <span class="line"></span>
 
@@ -188,6 +191,7 @@ html {
             </div>
             <div class="row100">
               <div class="col">
+              
                 <input type="submit" value="Send">
           </div>
 
